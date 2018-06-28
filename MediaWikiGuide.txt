@@ -14,11 +14,11 @@
 #
 # 3. Copy this shell script with the below command:
 #
-# 		sudo git clone https://github.com/mitchellbryant/CentOS7-Lamp-setup-script
+# 		sudo git clone https://github.com/mitchellbryant/centos7-lamp
 #
 # 4. Change to the cloned directory
 #
-#		cd CetosOS7-Lamp-setup-script
+#		cd centos7-lamp
 #
 # 5. Make the script executable with the following command: 
 #
