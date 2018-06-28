@@ -44,7 +44,8 @@
 #
 #		sudo systemctl restart httpd.service
 #
-# 10. Now you should be able to navigate to your server IP and you should be prompted to configure your LocalSettings.
+# 10. Now you should be able to navigate to your server IP and you should see a screen that says LocalSettings.php not found. Please set up the wiki first. 
+#     Click 'set up the wiki' to start configuration.	
 #     Once you are done with configuration you will need to copy that LocalSettings.php file to your /var/www/html directory on the server.
 #
 #		Thats it!
