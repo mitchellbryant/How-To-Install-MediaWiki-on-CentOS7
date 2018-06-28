@@ -1,0 +1,53 @@
+# How to install MediaWiki 1.31 on CentOS7
+# 
+# These instructions were made after succesfully installing MediaWiki on a CentOS7 server.  
+#
+# INSTRUCTIONS:
+#
+# 1. Obtain a fresh CentOS7 installation and login.
+#
+# Steps 2-6 will install the LAMP stack, with the required PHP 7.0 for this version of mediawiki
+#
+# 2. Install Git if you dont have it already with the below command:
+#
+# 		sudo yum -y install git
+#
+# 3. Copy this shell script with the below command:
+#
+# 		sudo git clone https://github.com/mitchellbryant/CentOS7-Lamp-setup-script
+#
+# 4. Change to the cloned directory
+#
+#		cd CetosOS7-Lamp-setup-script
+#
+# 5. Make the script executable with the following command: 
+#
+#      chmod a+x centos7-lamp-setup.sh
+#
+# 6. Execute the script as a sudo user:
+#
+#      sudo ./centos7-lamp-setup.sh
+#
+# 7. Download MediaWiki 1.31 with curl and untar the package
+#     
+#		sudo curl -O https://releases.wikimedia.org/mediawiki/1.31/mediawiki-1.31.0.tar.gz
+#
+#		sudo tar xvzf mediawiki-1.31.0.tar.gz
+#
+# 8. Rename old html directory and rename mediawiki install directory to the /var/www/html directory
+#
+#		sudo mv html htmlold
+#
+#		sudo mv mediawiki-1.31.0 html
+#
+# 9. Restart Apache 
+#
+#		sudo systemctl restart httpd.service
+#
+# 10. Now you should be able to navigate to your server IP and you should be prompted to configure your LocalSettings.
+#     Once you are done with configuration you will need to copy that LocalSettings.php file to your /var/www/html directory on the server.
+#
+#		Thats it!
+#
+#
+#
